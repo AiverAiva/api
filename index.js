@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const {  registerFont, createCanvas, loadImage } = require('canvas');
+const { registerFont, createCanvas, loadImage } = require('canvas');
 const app = express();
 const path = require('path');
 const { v2, auth } = require('osu-api-extended')
@@ -13,6 +13,7 @@ auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET)
 registerFont(path.resolve(__dirname, 'assets/VarelaRound.ttf'), {
 	family: 'VarelaRound'
 });
+// GlobalFonts.registerFromPath(path.resolve(__dirname, 'assets', 'VarelaRound.ttf'))
 
 // const key = process.env.KEY;
 
@@ -146,6 +147,7 @@ app.get('/:username', async (req, res) => {
 
     ctx.font = '40px VarelaRound';
     // let country = countryCodes[data.country_code];
+    // console.log(data.country.code)
     var flag = await loadImage(`https://osu.ppy.sh/images/flags/${data.country.code}.png`);
     ctx.drawImage(flag, 350, 130, 60, 40);
     ctx.fillText(data.country.name, 420, 127 + 40);
@@ -193,11 +195,11 @@ app.get('/:username', async (req, res) => {
 
     rect(ctx, 441, 364, 504, 12, 7);
     ctx.fillStyle = '#FFCC22';
-    rect(ctx, 441, 364, 504 * (data.statistics.level.progress > 2 ? data.statistics.level.progress : 2), 12, 7);
+    rect(ctx, 441, 364, 504 * (data.statistics.level.progress/100 > 0.02 ? data.statistics.level.progress/100 : 0.02), 12, 7);
     ctx.textAlign = 'left';
     ctx.fillStyle = mainColour;
     ctx.font = '21px VarelaRound';
-    ctx.fillText(Math.floor(100 * (data.statistics.level.progress || 0) + '%', 960, 359 + 21));
+    ctx.fillText((data.statistics.level.progress || 0) + '%', 960, 359 + 21);
 
     ctx.fillStyle = mainColour + '21';
     rect(ctx, 44, 472, 191, 53, 30);
@@ -230,6 +232,9 @@ app.get('/:username', async (req, res) => {
     // ctx.fillText(`Rank: ${data.pp_rank}`, 10, 60);
     // ctx.fillText(`playcount: ${data.playcount}`, 10, 90);
 
+    
+    // res.setHeader('content-type', 'image/png')
+    // res.send(await canvas.encode('png'))
     res.writeHead(200, { 'Content-Type': 'image/png' });
     canvas.createPNGStream().pipe(res);
   } catch (error) {
