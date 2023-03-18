@@ -2,12 +2,14 @@
     "builds": [
         {
           "src": "index.js",
-          "use": "@now/node"
+          "use": "@vercel/node"
         }
     ],
     "routes": [
-      { "src": "/api/profile/.*", "dest": "/api/profile" },
-      { "src": "/.*", "dest": "/index.js" }
+        {
+          "src": "/(.*)",
+          "dest": "index.js"
+        }
     ]
 }
    
