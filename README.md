@@ -6,8 +6,19 @@ Most canvas code for generating image, formatter are from their repo.
 
 # HOW TO USE?
 
-https://osu.weikuwu.me/[osu username / id].png
+### Base url: https://osu.weikuwu.me/
 
-and it will return an image of personal data
+## User
+
+### osu! profile image
+
+##### Overview
+Returning an image of personal dat
+
+###### URL
+    /{ username or id }.png
+###### Parameters
+- `mode` - mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional
+
 
 will add more thingy :DDD
