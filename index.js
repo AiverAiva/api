@@ -74,6 +74,9 @@ function numberSuffix(value, formatString){
 app.get('/', async (req, res) => {
   res.send("Missing username")
 })
+app.listen(5000, () => {
+    console.log("Running on port 5000.");
+  });
 // app.get('/:username', async (req, res) => {
 //   const { username } = req.params;
 //   let mode = req.query.mode;
