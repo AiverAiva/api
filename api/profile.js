@@ -1,17 +1,18 @@
 const express = require('express');
 const axios = require('axios');
 const { registerFont, createCanvas, loadImage } = require('canvas');
-const app = express();
+// const app = express();
 const path = require('path');
 const { v2, auth } = require('osu-api-extended')
 require('dotenv').config();
 const port = process.env.PORT || 3000;
+const router = express.Router();
 
 // var countryCodes = require('./country_codes.json' );
 // const { user } = require('osu-api-extended/dist/api/v1');
 
 auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET)
-registerFont(path.resolve(__dirname, 'assets/VarelaRound.ttf'), {
+registerFont(path.resolve(__dirname, '../assets/VarelaRound.ttf'), {
 	family: 'VarelaRound'
 });
 // GlobalFonts.registerFromPath(path.resolve(__dirname, 'assets', 'VarelaRound.ttf'))
@@ -68,7 +69,10 @@ function numberSuffix(value, formatString){
 // }
 
 // main()
-app.get('/:username', async (req, res) => {
+router.get('/', async (req, res) => {
+  res.send("Missing username")
+})
+router.get('/:username', async (req, res) => {
   const { username } = req.params;
   let mode = req.query.mode;
   mode = (!mode)?"osu":mode 
@@ -94,7 +98,7 @@ app.get('/:username', async (req, res) => {
     rect(ctx, 0, 0, canvas.width, canvas.height, 45);
     ctx.fill();
 
-    let backgroundImage = await loadImage(path.resolve(__dirname, 'assets/background.png'));
+    let backgroundImage = await loadImage(path.resolve(__dirname, '../assets/background.png'));
     ctx.shadowColor = 'rgba(0,0,0,0.5)';
     ctx.shadowBlur = 40;
     ctx.save();
@@ -137,7 +141,7 @@ app.get('/:username', async (req, res) => {
     ctx.ellipse(268 + 30, 277 + 30, 40, 40, 0, 0, Math.PI * 2);
     ctx.fill();
     // var modes = ['osu', 'taiko', 'catch', 'mania'];
-    var icon = await loadImage(path.resolve(__dirname, `assets/${mode}.png`));
+    var icon = await loadImage(path.resolve(__dirname, `../assets/${mode}.png`));
     ctx.drawImage(icon, 252, 261, 86, 86);
     ctx.restore();
     
@@ -153,11 +157,11 @@ app.get('/:username', async (req, res) => {
     ctx.drawImage(flag, 350, 130, 60, 40);
     ctx.fillText(data.country.name, 420, 127 + 40);
 
-    var gradeA = await loadImage(path.resolve(__dirname, 'assets/grade_a.png'));
-    var gradeS = await loadImage(path.resolve(__dirname, 'assets/grade_s.png'));
-    var gradeSS = await loadImage(path.resolve(__dirname, 'assets/grade_ss.png'));
-    var gradeSH = await loadImage(path.resolve(__dirname, 'assets/grade_sh.png'));
-    var gradeSSH = await loadImage(path.resolve(__dirname, 'assets/grade_ssh.png'));
+    var gradeA = await loadImage(path.resolve(__dirname, '../assets/grade_a.png'));
+    var gradeS = await loadImage(path.resolve(__dirname, '../assets/grade_s.png'));
+    var gradeSS = await loadImage(path.resolve(__dirname, '../assets/grade_ss.png'));
+    var gradeSH = await loadImage(path.resolve(__dirname, '../assets/grade_sh.png'));
+    var gradeSSH = await loadImage(path.resolve(__dirname, '../assets/grade_ssh.png'));
 
     ctx.drawImage(gradeA, 766, 112 + 25, 98, 50);
     ctx.drawImage(gradeS, 922, 112 + 25, 98, 50);
@@ -180,7 +184,7 @@ app.get('/:username', async (req, res) => {
     ctx.font = '57px VarelaRound';
     ctx.fillText('#' + number(parseInt(data.statistics.country_rank) || 0), 347, 259 + 57);
 
-    var hexagon = await loadImage(path.resolve(__dirname, 'assets/hexagon.png'));
+    var hexagon = await loadImage(path.resolve(__dirname, '../assets/hexagon.png'));
     ctx.drawImage(hexagon, 342, 332, 72, 77);
 
     // console.log(data.level)
@@ -244,7 +248,7 @@ app.get('/:username', async (req, res) => {
   }
 });
 
-module.exports = app;
+module.exports = router;
 
 // [
 //   {

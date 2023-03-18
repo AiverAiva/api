@@ -1,7 +1,7 @@
 {
-    "functions": {
-      "api/profile.js": {
-        "memory": 128
-      }
-    }
+    "routes": [
+      { "src": "/api/profile/.*", "dest": "/api/profile" },
+      { "src": "/.*", "dest": "/index.js" }
+    ]
   }
+  
