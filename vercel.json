@@ -2,6 +2,10 @@
     "routes": [
       { "src": "/api/profile/.*", "dest": "/api/profile" },
       { "src": "/.*", "dest": "/index.js" }
-    ]
-  }
+    ],
+    "static": {
+        "ignore": "**/*"
+    },
+    "outputDirectory": null
+}
   
