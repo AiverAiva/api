@@ -5,7 +5,9 @@ Thanks to [@Moorad](https://github.com/Moorad/) for their repo "the-beautiful-bo
 Most canvas code for generating image, formatter are from their repo.
 
 # HOW TO USE?
-https://osu-stats-kappa.vercel.app/[osu username / id].png
+
+https://osu.weikuwu.me/[osu username / id].png
+
 and it will return an image of personal data
 
 will add more thingy :DDD
