@@ -6,15 +6,15 @@ const path = require('path');
 const { v2, auth } = require('osu-api-extended')
 require('dotenv').config();
 
-var countryCodes = require('./country_codes.json' );
-const { user } = require('osu-api-extended/dist/api/v1');
+// var countryCodes = require('./country_codes.json' );
+// const { user } = require('osu-api-extended/dist/api/v1');
 
 auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET)
 registerFont(path.resolve(__dirname, 'assets/VarelaRound.ttf'), {
 	family: 'VarelaRound'
 });
 
-const key = process.env.KEY;
+// const key = process.env.KEY;
 
 // const config = {
 //   headers: {
