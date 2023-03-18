@@ -1,0 +1,7 @@
+{
+    "functions": {
+      "api/osu.js": {
+        "memory": 128
+      }
+    }
+  }

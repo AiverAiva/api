@@ -244,17 +244,7 @@ app.get('/:username', async (req, res) => {
   }
 });
 
-const server = app.listen(port, () => {
-  console.log(`Express running → PORT ${server.address().port}`);
-});
-
-process.on('SIGTERM', () => {
-  console.log('SIGTERM received. Closing server...');
-  server.close(() => {
-    console.log('Server closed.');
-    process.exit(0);
-  });
-});
+module.exports = app;
 
 // [
 //   {
