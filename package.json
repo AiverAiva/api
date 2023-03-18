@@ -4,6 +4,7 @@
     "canvas": "^2.6.1",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "osu-api-extended": "^2.5.21"
+    "osu-api-extended": "^2.5.21",
+    "zlib": "^1.0.5"
   }
 }
