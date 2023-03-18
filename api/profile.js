@@ -17,7 +17,7 @@ registerFont(path.resolve(__dirname, 'assets/VarelaRound.ttf'), {
 // GlobalFonts.registerFromPath(path.resolve(__dirname, 'assets', 'VarelaRound.ttf'))
 
 // const key = process.env.KEY;
-
+ 
 // const config = {
 //   headers: {
 //     Authorization: `Bearer ${key}`
