@@ -1,8 +1,13 @@
 {
+    "builds": [
+        {
+          "src": "index.js",
+          "use": "@now/node"
+        }
+    ],
     "routes": [
       { "src": "/api/profile/.*", "dest": "/api/profile" },
       { "src": "/.*", "dest": "/index.js" }
-    ],
-    "outputDirectory": null
+    ]
 }
    
