@@ -1,6 +1,6 @@
 {
     "functions": {
-      "api/osu.js": {
+      "api/profile.js": {
         "memory": 128
       }
     }
