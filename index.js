@@ -74,7 +74,7 @@ app.get('/', async (req, res) => {
   res.send("Missing username")
 })
 
-app.get('/:username', async (req, res) => {
+app.get('/:username.png', async (req, res) => { 
   const { username } = req.params;
   let mode = req.query.mode;
   mode = (!mode)?"osu":mode 
@@ -111,6 +111,7 @@ app.get('/:username', async (req, res) => {
     ctx.shadowBlur = 0;
     ctx.save();
 
+
     // console.log(data.user_id)
     var userPictureUrl = data.avatar_url
     // console.log(userPictureUrl)
@@ -122,6 +123,7 @@ app.get('/:username', async (req, res) => {
     // } else if (options.type == 2) {
     //   userPictureUrl = `https://a.akatsuki.pw/${data.user_id}?${Date.now().toString()}`;
     // }
+
     var userPicture;
     try {
       userPicture = await loadImage(userPictureUrl);
@@ -146,12 +148,11 @@ app.get('/:username', async (req, res) => {
     var icon = await loadImage(path.resolve(__dirname, `assets/${mode}.png`));
     ctx.drawImage(icon, 252, 261, 86, 86);
     ctx.restore();
-    
 
     ctx.fillStyle = mainColour;
     ctx.font = '63px VarelaRound';
     ctx.fillText(data.username, 347, 56 + 63);
-
+    
     ctx.font = '40px VarelaRound';
     // let country = countryCodes[data.country_code];
     // console.log(data.country.code)
@@ -229,16 +230,20 @@ app.get('/:username', async (req, res) => {
     ctx.fillText(number(Math.floor((parseFloat(data.statistics.play_time) || 0) / 60 / 60)) + 'h', 647 + 50, 536 + 40);
     // ctx.fillText(format.number(Math.floor(parseInt(data.total_seconds_played) || 0) / 60 / 60) + 'h', 651 + 50, 536 + 40);
     ctx.fillText(number(data.statistics.play_count || 0), 925 + 100, 536 + 40);
-    
     // res.setHeader('content-type', 'image/png')
     // res.send(await canvas.encode('png'))
     res.writeHead(200, { 'Content-Type': 'image/png' });
     canvas.createPNGStream().pipe(res);
+
   } catch (error) {
     console.error(error);
     res.status(500).send('Internal server error');
   }
 });
+
+app.listen(3000, () => {
+    console.log("Running on port 3000.");
+  });
 
 // Export the Express API
 module.exports = app;
