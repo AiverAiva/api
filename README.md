@@ -15,15 +15,15 @@
   <p align="center">
     an api created with express.js which generates beautiful stats images.
     <br />
-    <a href="https://github.com/AiverAiva/osu-stats/actions">
+    <!-- <a href="https://github.com/AiverAiva/osu-stats/actions">
       <img alt="Tests Passing" src="https://github.com/AiverAiva/osu-stats/workflows/Test/badge.svg" />
-    </a>
+    </a> -->
     <a href="https://github.com/AiverAiva/osu-stats/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/AiverAiva/osu-stats" />
     </a>
-    <a href="https://codecov.io/gh/AiverAiva/osu-stats">
+    <!-- <a href="https://codecov.io/gh/AiverAiva/osu-stats">
       <img src="https://codecov.io/gh/AiverAiva/osu-stats/branch/master/graph/badge.svg" />
-    </a>
+    </a> -->
     <a href="https://github.com/AiverAiva/osu-stats/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/AiverAiva/osu-stats?color=0088ff" />
     </a>
