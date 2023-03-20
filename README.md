@@ -1,4 +1,4 @@
-![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
+<!-- ![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark) -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -14,6 +14,23 @@
 
   <p align="center">
     an api created with express.js which generates beautiful stats images.
+    <br />
+    <a href="https://github.com/AiverAiva/osu-stats/actions">
+      <img alt="Tests Passing" src="https://github.com/AiverAiva/osu-stats/workflows/Test/badge.svg" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/AiverAiva/osu-stats" />
+    </a>
+    <a href="https://codecov.io/gh/AiverAiva/osu-stats">
+      <img src="https://codecov.io/gh/AiverAiva/osu-stats/branch/master/graph/badge.svg" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/AiverAiva/osu-stats?color=0088ff" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AiverAiva/osu-stats?color=0088ff" />
+    </a>
+    <br />
     <br />
     <a href="https://github.com/AiverAiva/osu-stats/wiki"><strong>Wiki »</strong></a>
     <br />
