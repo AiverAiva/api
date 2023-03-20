@@ -1,5 +1,31 @@
-# osu-stats
-an api created with express.js which generates beautiful stats images.
+![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+<div align="center">
+  <a href="https://github.com/AiverAiva/osu-stats">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Osu%21_Logo_2016.svg/768px-Osu%21_Logo_2016.svg.png" alt="Logo" width="80" height="80">
+  </a>
+
+<h3 align="center">osu-stats</h3>
+
+  <p align="center">
+    an api created with express.js which generates beautiful stats images.
+    <br />
+    <a href="https://github.com/AiverAiva/osu-stats/wiki"><strong>Wiki »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/AiverAiva/osu-stats">View Demo</a>
+    ·
+    <a href="https://github.com/AiverAiva/osu-stats/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/AiverAiva/osu-stats/issues">Request Feature</a>
+  </p>
+</div>
+
 
 Thanks to [@Moorad](https://github.com/Moorad/) for their repo "the-beautiful-bot" but idk why did they delete it/make it private.
 Most canvas code for generating image, formatter are from their repo.
