@@ -6,7 +6,7 @@ Most canvas code for generating image, formatter are from their repo.
 
 # HOW TO USE?
 
-### Base url: https://osu.weikuwu.me/
+### Base url: https://osu-stats-kappa.vercel.app/
 
 ## User
 
@@ -16,7 +16,7 @@ Most canvas code for generating image, formatter are from their repo.
 Returning an image of personal dat
 
 ###### URL
-    /{ username or id }.png
+    /{ username or id }.png (.png is optional for previewing in some chatting apps)
 ###### Parameters
 - `mode` - mode (0 = osu!, 1 = Taiko, 2 = CtB, 3 = osu!mania). Optional
 
