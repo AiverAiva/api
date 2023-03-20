@@ -1,9 +1,4 @@
 <!-- ![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark) -->
-<!-- [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url] -->
 
 <div align="center">
   <a href="https://github.com/AiverAiva/osu-stats">
@@ -11,19 +6,15 @@
   </a>
 
 <h3 align="center">osu-stats</h3>
-
   <p align="center">
-    an api created with express.js which generates beautiful stats images.
+    An api created with express.js which generates beautiful stats images.
     <br />
-    <!-- <a href="https://github.com/AiverAiva/osu-stats/actions">
-      <img alt="Tests Passing" src="https://github.com/AiverAiva/osu-stats/workflows/Test/badge.svg" />
-    </a> -->
+    <a href="https://github.com/AiverAiva/osu-stats">
+      <img alt="Stars" src="https://img.shields.io/github/stars/AiverAiva/osu-stats" />
+    </a>
     <a href="https://github.com/AiverAiva/osu-stats/graphs/contributors">
       <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/AiverAiva/osu-stats" />
     </a>
-    <!-- <a href="https://codecov.io/gh/AiverAiva/osu-stats">
-      <img src="https://codecov.io/gh/AiverAiva/osu-stats/branch/master/graph/badge.svg" />
-    </a> -->
     <a href="https://github.com/AiverAiva/osu-stats/issues">
       <img alt="Issues" src="https://img.shields.io/github/issues/AiverAiva/osu-stats?color=0088ff" />
     </a>
