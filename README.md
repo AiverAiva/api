@@ -33,6 +33,8 @@ WELL ITS CURRENTLY GLITCHY AF, cuz im not able to host it myself, and vercel isn
   </p>
 </div>
 
+This is an example of what it returns:
+<img alt="Example" src="https://media.discordapp.net/attachments/670810684363374597/1110672697635119194/weikuu.png" />
 
 Thanks to [@Moorad](https://github.com/Moorad/) for their repo "the-beautiful-bot" but idk why did they delete it/make it private.
 Most canvas code for generating images and formatters are from their repo.
