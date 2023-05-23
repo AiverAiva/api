@@ -1,3 +1,6 @@
+WELL ITS CURRENTLY GLITCHY AF, cuz im not able to host it myself, and vercel isnt doing good, if anybody got better idea u can contact me on discord AiverAiva#1234 !
+
+
 ![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
 
 <div align="center">
