@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "canvas": "2.7.0",
+    "canvas": "^2.11.2",
     "dotenv": "^16.3.1",
     "fs": "^0.0.1-security",
     "next": "13.5.4",
