@@ -27,7 +27,7 @@ export default async function hello(req, res) {
     }
 
     const read = fs.readFileSync(path.resolve(process.cwd(),'token.txt'), 'utf8');
-    // auth.set_v2(process.env.OSU_TOKEN);
+    auth.set_v2(read);
 
     // console.log(auth.cache_v2)
     // const request = await axios.get(`https://osu.ppy.sh/api/get_user?k=${process.env.API_KEY}&u=${username}`)
