@@ -21,7 +21,12 @@ export default async function hello(req, res) {
     }
 
     const data = await v2.user.details(username, mode)
-    // console.log(data)
+    if(!data.id){
+      res.statusCode = 400;
+      res.json({ error: 'Unknown username or mode, please check the documents. (api.weikuwu.me)' });
+      return;
+    }
+    
     var mainColour = '#ffffff';
     var canvas = createCanvas(1200, 624);
     var ctx = canvas.getContext('2d');
