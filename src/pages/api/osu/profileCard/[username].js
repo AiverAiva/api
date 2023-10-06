@@ -1,7 +1,7 @@
 const { registerFont, createCanvas, loadImage } = require('canvas');
 const { v2, auth } = require('osu-api-extended')
 const path = require('path');
-// const fs = require('fs')
+const fs = require('fs')
 // const axios = require('axios')
 
 const format = require('../../../../handlers/format.js')
