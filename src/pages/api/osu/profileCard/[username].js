@@ -1,10 +1,16 @@
 const { registerFont, createCanvas, loadImage } = require('canvas');
 const { v2, auth } = require('osu-api-extended')
 const path = require('path');
+// const fs = require('fs')
+// const axios = require('axios')
+
 const format = require('../../../../handlers/format.js')
 require('dotenv').config();
 const SCOPE_LIST = ['public'];
-auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, SCOPE_LIST)
+
+// fs.writeFileSync('token.txt', auth.cache_v2, 'utf8');
+// console.log(auth.cache_v2)
+
 registerFont(path.resolve(process.cwd(), 'src/assets/VarelaRound.ttf'), {
 	family: 'VarelaRound'
 });
@@ -13,13 +19,19 @@ export default async function hello(req, res) {
     const {
       query: { username, mode = 'osu' },
     } = req;
-    
+
     if (!username) {
       res.statusCode = 400;
       res.json({ error: 'Missing username' });
       return;
     }
 
+    // const read = fs.readFileSync('token.txt', 'utf8');
+    // auth.set_v2(read);
+
+    // const request = await axios.get(`https://osu.ppy.sh/api/get_user?k=${process.env.API_KEY}&u=${username}`)
+    // const data = request.data
+    auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, SCOPE_LIST)
     const data = await v2.user.details(username, mode)
     console.log(data)
     if(!data.id){
