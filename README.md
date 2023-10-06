@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![osu-stats](https://socialify.git.ci/AiverAiva/osu-stats/image?description=1&font=Raleway&language=1&name=1&owner=1&pattern=Charlie%20Brown&theme=Dark)
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<div align="center">
+  <h3 align="center">osu-stats</h3>
+  <p align="center">
+    An api created with express.js which generates beautiful stats images.
+    <br />
+    <a href="https://github.com/AiverAiva/osu-stats/wiki"><strong>Wiki »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/AiverAiva/osu-stats">
+      <img alt="Stars" src="https://img.shields.io/github/stars/AiverAiva/osu-stats" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/graphs/contributors">
+      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/AiverAiva/osu-stats" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/issues">
+      <img alt="Issues" src="https://img.shields.io/github/issues/AiverAiva/osu-stats?color=0088ff" />
+    </a>
+    <a href="https://github.com/AiverAiva/osu-stats/pulls">
+      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/AiverAiva/osu-stats?color=0088ff" />
+    </a>
+    <br />
+    <br />
+    <!-- <a href="https://github.com/AiverAiva/osu-stats">View Demo</a> -->
+    <!-- · -->
+    <a href="https://github.com/AiverAiva/osu-stats/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/AiverAiva/osu-stats/issues">Request Feature</a>
+  </p>
+</div>
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about this api, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Our wiki](https://github.com/AiverAiva/osu-stats/wiki) - Our official document about this api.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Example
 
-## Deploy on Vercel
+This is an example of what it returns:
+<img alt="Example" src="https://media.discordapp.net/attachments/670810684363374597/1110672697635119194/weikuu.png" />
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Credit 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks to [@Moorad](https://github.com/Moorad/) for contributing a part of the code from an deleted repository.
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
