@@ -6,7 +6,7 @@ const path = require('path');
 
 const format = require('../../../../handlers/format.js')
 require('dotenv').config();
-const SCOPE_LIST = ['public'];
+// const SCOPE_LIST = ['public'];
 
 // fs.writeFileSync('token.txt', auth.cache_v2, 'utf8');
 // console.log(auth.cache_v2)
@@ -31,7 +31,7 @@ export default async function hello(req, res) {
 
     // const request = await axios.get(`https://osu.ppy.sh/api/get_user?k=${process.env.API_KEY}&u=${username}`)
     // const data = request.data
-    auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, SCOPE_LIST)
+    // auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, SCOPE_LIST)
     const data = await v2.user.details(username, mode)
     console.log(data)
     if(!data.id){
