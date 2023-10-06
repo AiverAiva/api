@@ -5,7 +5,7 @@ const format = require('../../../../handlers/format.js')
 require('dotenv').config();
 const SCOPE_LIST = ['public'];
 auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, SCOPE_LIST)
-registerFont(path.resolve('public/VarelaRound.ttf'), {
+registerFont(path.resolve(process.cwd(), 'src/assets/VarelaRound.ttf'), {
 	family: 'VarelaRound'
 });
 
