@@ -21,6 +21,10 @@ export default async (req, res) => {
       return;
     }
 
+    if(auth.cache_v2 == '') {
+      await auth.login()
+    }
+
     const read = fs.readFileSync(path.resolve(process.cwd(),'token.txt'), 'utf8');
     auth.set_v2(read);
 
