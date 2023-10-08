@@ -39,7 +39,7 @@ To learn more about this api, take a look at the following resources:
 ## Example
 
 This is an example of what it returns:
-<img alt="Example" src="https://media.discordapp.net/attachments/670810684363374597/1110672697635119194/weikuu.png" />
+<img alt="Example" src="https://api.weikuwu.me/osu/profileCard/weikuu" />
 
 ## Credit 
 
