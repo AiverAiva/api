@@ -24,11 +24,11 @@ export default async (req, res) => {
     const read = fs.readFileSync(path.resolve(process.cwd(),'token.txt'), 'utf8');
     auth.set_v2(read);
 
-    const verification = await v2.user.details(username, mode)
-    if(verification.authentication){
-      await auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, ['public']);
-      fs.writeFileSync('token.txt', auth.cache_v2, 'utf8');
-    }
+    // const verification = await v2.user.details(username, mode)
+    // if(verification.authentication){
+    //   await auth.login(process.env.CLIENT_ID, process.env.CLIENT_SECRET, ['public']);
+    //   fs.writeFileSync('token.txt', auth.cache_v2, 'utf8');
+    // }
 
     const data = await v2.user.details(username, mode)
     // console.log(data)
