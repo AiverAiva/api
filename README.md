@@ -39,7 +39,7 @@ To learn more about this api, take a look at the following resources:
 ## Example
 
 This is an example of what it returns:
-<img alt="Example" src="https://api.weikuwu.me/osu/profileCard/weikuu" />
+<img alt="Example" src="https://github.com/AiverAiva/api/assets/43096905/5b2e916d-8c23-4a65-8b3c-619bfd5f724a" />
 
 ## Credit 
 
