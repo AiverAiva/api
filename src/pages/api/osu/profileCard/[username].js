@@ -1,31 +1,3 @@
-/**
- * @swagger
- * /osu/profileCard/{username}:
- *  get:
- *    summary: Get player profile card image
- *    description: |
- *      This endpoint returns an image of the player's profile data for the specified username. The profile card contains visual representation of player data such as avatar, rank, and statistics.
- *    parameters:
- *      - in: path
- *        name: username
- *        required: true
- *        schema:
- *          type: string
- *        description: The username of the player for whom the profile card image is requested (case-sensitive).
- *      - in: query
- *        name: mode
- *        required: false
- *        schema:
- *          type: string
- *          enum: ["osu", "taiko", "fruits", "mania"]
- *        description: Optional mode parameter with possible values "osu", "taiko", "fruits"or "mania".
- *    responses:
- *      '200':
- *        description: Successful response with player profile card image.
- *      '400':
- *        description: Player not found. Indicates that the specified username does not exist.
- */
-
 const { registerFont, createCanvas, loadImage } = require('canvas');
 const { v2, auth } = require('osu-api-extended')
 const path = require('path');
