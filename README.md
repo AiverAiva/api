@@ -5,7 +5,7 @@
   <p align="center">
     An api created with next.js for my personal use.
     <br />
-    <a href="https://github.com/AiverAiva/api/wiki"><strong>Wiki »</strong></a>
+    <a href="https://api.weikuwu.me/"><strong>Docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/AiverAiva/api">
@@ -34,7 +34,7 @@
 
 To learn more about this api, take a look at the following resources:
 
-- [Our wiki](https://github.com/AiverAiva/api/wiki) - Our official document about this api.
+- [Documentation](https://api.weikuwu.me/) - read if u want to use it :D.
 
 ## Example
 
