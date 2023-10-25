@@ -9,7 +9,7 @@ export default async (req, res) => {
 
     if (prefix in prefixList.data) {
         res.statusCode = 200;
-        res.json(prefixList.data[prefix])
+        res.json({guildName: prefixList.data[prefix]})
     } else {
         const lowercaseObjects = {};
         for (const key in prefixList.data) {
@@ -18,7 +18,7 @@ export default async (req, res) => {
         }
         if (prefix in lowercaseObjects) {
             res.statusCode = 200;
-            res.json(lowercaseObjects[prefix])
+            res.json({ guildName: lowercaseObjects[prefix]})
         }else{
             res.status(400).json({ error: "Guild not found or other issue(check api.weikuwu.me for more infomation)" });
         }
