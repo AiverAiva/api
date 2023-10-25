@@ -28,7 +28,6 @@ export default async (req, res) => {
             }else{
                 res.status(200).json({guildName: prefixList.data[guild]});
             }
-            res.status(400).json({ error: "Guild not found or other issue(check api.weikuwu.me for more infomation)" });
         }
     }
 
