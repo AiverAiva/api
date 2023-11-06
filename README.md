@@ -26,6 +26,8 @@
     <!-- · -->
     <a href="https://github.com/AiverAiva/api/issues">Report Bug</a>
     ·
+    <a href="https://discord.gg/P2nsVRuG5e">Discord Server</a>
+    ·
     <a href="https://github.com/AiverAiva/api/issues">Request Feature</a>
   </p>
 </div>
