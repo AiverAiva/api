@@ -1,7 +1,10 @@
 export default async function status(req, res) {
-    const result = await axios.get('/assets/aspects_data.json')
+    try {
+        const response = await fetch('/assets/aspects_data.json');
+        const result = await response.json();
 
-    res.statusCode = 200;
-    res.json(result)
-    
-  }
+        res.status(200).json(result);
+    } catch (error) {
+        res.status(500).json({ error: 'Failed to fetch data' });
+    }
+}
